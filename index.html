@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weekly Tasks</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #3498db;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+     <h1>Task manager</h1>
+    <h2>Choose a Day</h2>
+    <ul>
+        <li><a href="{% url "monday.html" %}">Monday</a></li>
+        <li><a href="{% url "tuesday.html" %}">Tuesday</a></li>
+        <li><a href="{% url "wednesday.html" %}">Wednesday</a></li>
+        <li><a href="{% url "thursday.html" %}">Thursday</a></li>
+        <li><a href="{% url "friday.html" %}">Friday</a></li>
+        <li><a href="{% url "saturday.html" %}">Saturday</a></li>
+        <li><a href="{% url "sunday.html" %}">Sunday</a></li>
+    </ul>
+</body>
+</html>
+
